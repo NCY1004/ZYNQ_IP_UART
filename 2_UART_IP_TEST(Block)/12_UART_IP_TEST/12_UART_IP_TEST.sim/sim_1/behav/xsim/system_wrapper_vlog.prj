@@ -1,0 +1,25 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../12_UART_IP_TEST.gen/sources_1/bd/system/ipshared/ec67/hdl" --include "../../../../12_UART_IP_TEST.gen/sources_1/bd/system/ipshared/5765/hdl" --include "E:/Xilinx/Vivado/2022.1/data/xilinx_vip/include" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_auto_pc_0/sim/system_auto_pc_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_processing_system7_0_1/sim/system_processing_system7_0_1.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_0/sim/bd_1579_ila_lib_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_1/bd_1579_g_inst_0_gigantic_mux.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_1/sim/bd_1579_g_inst_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_2/sim/bd_1579_slot_0_aw_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_3/sim/bd_1579_slot_0_w_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_4/sim/bd_1579_slot_0_b_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_5/sim/bd_1579_slot_0_ar_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/ip/ip_6/sim/bd_1579_slot_0_r_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/bd_0/sim/bd_1579.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_system_ila_0_1/sim/system_system_ila_0_1.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ipshared/ddd2/src/UART.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ipshared/ddd2/src/Axi_Slave.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/ip/system_UART_IP_NCY_0_0/sim/system_UART_IP_NCY_0_0.v" \
+"../../../../12_UART_IP_TEST.ip_user_files/bd/system/sim/system.v" \
+"../../../../12_UART_IP_TEST.gen/sources_1/bd/system/hdl/system_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

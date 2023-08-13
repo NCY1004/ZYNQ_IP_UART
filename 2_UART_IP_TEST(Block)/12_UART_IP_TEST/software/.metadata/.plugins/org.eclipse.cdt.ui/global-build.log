@@ -1,0 +1,35 @@
+Nothing to build in platform 'system_wrapper'
+
+16:37:22 **** Incremental Build of configuration Debug for project UART ****
+make all 
+E:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+E:/Xilinx/Vitis/2022.1/gnuwin/bin/make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IE:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_1/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+../src/helloworld.c: In function 'main':
+../src/helloworld.c:89:13: warning: unused variable 'status' [-Wunused-variable]
+   89 |         int status;
+      |             ^~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: UART.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LE:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/system_wrapper/export/system_wrapper/sw/system_wrapper/standalone_ps7_cortexa9_1/bsplib/lib -o "UART.elf"  ./src/helloworld.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: UART.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size UART.elf  |tee "UART.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  26214	   1920	  22616	  50750	   c63e	UART.elf
+'Finished building: UART.elf.size'
+' '
+16:37:23 **** Incremental Build of configuration Debug for project UART_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 51171 E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/system_wrapper/export/system_wrapper/system_wrapper.xpfm standalone_ps7_cortexa9_1 E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/UART_system/Debug/system.bif
+sdcard_gen --xpfm E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/system_wrapper/export/system_wrapper/system_wrapper.xpfm --sys_config system_wrapper --bif E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/UART_system/Debug/system.bif --bitstream E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/UART/_ide/bitstream/system_wrapper.bit --elf E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/UART/Debug/UART.elf,ps7_cortexa9_1
+creating BOOT.BIN using E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/UART/_ide/bitstream/system_wrapper.bit
+Running E:/Xilinx/Vitis/2022.1/bin/bootgen  -image E:/12_Zynq_mini/12_UART_IP_TEST/12_UART_IP_TEST/software/UART_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN

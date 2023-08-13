@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../UART_IP.srcs/sources_1/imports/src/Axi_Slave.v" \
+"../../../../UART_IP.srcs/sources_1/new/UART.v" \
+"../../../../UART_IP.srcs/sim_1/imports/UART_IP.srcs/Axi_Slave_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

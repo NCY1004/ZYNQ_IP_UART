@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/12_Zynq_mini/11_UART_IP/UART_IP/UART_IP.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="1" />
+   <wvobject fp_name="AR_Channel_(i1:s0)_(ps7_0_axi_periph_M00_AXI)" type="array">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">AR_Channel_(i1:s0)_(ps7_0_axi_periph_M00_AXI)[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AR_Channel_(i1:s0)_(ps7_0_axi_periph_M00_AXI)[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="EnumTransactionColorTable">0=blank</obj_property>
+      <obj_property name="CustomSignalColor">indigo</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="label"> :  : AR Channel  Events</obj_property>
+   </wvobject>
+</wave_config>

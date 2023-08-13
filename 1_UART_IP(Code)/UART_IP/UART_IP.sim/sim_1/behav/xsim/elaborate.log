@@ -1,0 +1,19 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2022.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Axi_Slave_TB_behav xil_defaultlib.Axi_Slave_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/12_Zynq_mini/11_UART_IP/UART_IP/UART_IP.srcs/sources_1/imports/src/Axi_Slave.v" Line 1. Module Axi_Slave doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/12_Zynq_mini/11_UART_IP/UART_IP/UART_IP.srcs/sources_1/new/UART.v" Line 3. Module UART doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/12_Zynq_mini/11_UART_IP/UART_IP/UART_IP.srcs/sources_1/imports/src/Axi_Slave.v" Line 1. Module Axi_Slave doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/12_Zynq_mini/11_UART_IP/UART_IP/UART_IP.srcs/sources_1/new/UART.v" Line 3. Module UART doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.UART
+Compiling module xil_defaultlib.Axi_Slave
+Compiling module xil_defaultlib.Axi_Slave_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Axi_Slave_TB_behav
